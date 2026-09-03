@@ -17,9 +17,10 @@
   --mint:       #4ADE9C;
   --mint-soft:  #1C332C;
 
-  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
-  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-  --display: 'Libre Caslon Display', var(--serif);
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono: var(--sans);
+  --serif: var(--sans);
+  --display: 'Lobster', cursive;
 
   --measure: 860px;
   --space-1: 8px;
@@ -271,11 +272,6 @@ h1,h2,h3{ margin: 0; font-family: var(--mono); }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-.hero__photo-placeholder{
-  font-family: var(--display);
-  font-size: clamp(64px, 12vw, 96px);
-  color: rgba(18,16,22,0.35);
 }
 .hero__photo-img{
   width: 100%; height: 100%;
