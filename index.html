@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Byron Mutimusakwa — Community Ops, Brand Growth &amp; People Experience</title>
+<meta name="description" content="Byron Mutimusakwa — Community Operations, Brand Growth, Product Marketing &amp; People Experience. Case log, service record, and open threads.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%23201D2E%22/><text x=%2250%22 y=%2266%22 font-family=%22monospace%22 font-size=%2258%22 fill=%22%23EDEAE1%22 text-anchor=%22middle%22>B</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stickybar" id="stickybar" aria-hidden="true">
+  <div class="stickybar__inner">
+    <span class="stickybar__name">BYRON MUTIMUSAKWA</span>
+    <nav class="stickybar__nav">
+      <a href="#log">Case&nbsp;Log</a>
+      <a href="#skills">Checklist</a>
+      <a href="#record">Service&nbsp;Record</a>
+      <a href="#contact">New&nbsp;Thread</a>
+    </nav>
+  </div>
+</div>
+
+<main class="sheet">
+
+  <!-- MASTHEAD -->
+  <header class="masthead reveal">
+    <div class="masthead__top">
+      <h1 class="masthead__name">BYRON&nbsp;MUTIMUSAKWA</h1>
+      <span class="status-dot" title="Open to opportunities">
+        <span class="status-dot__pulse"></span>
+        OPEN&nbsp;TO&nbsp;WORK
+      </span>
+    </div>
+    <p class="masthead__subtitle">Community Ops · Brand Growth · Product Marketing · People Experience</p>
+  </header>
+
+  <!-- ROUTING SLIP -->
+  <section class="routing reveal" aria-label="Memo routing information">
+    <div class="routing__row"><span class="routing__label">TO</span><span class="routing__value">Hiring Teams &amp; Collaborators</span></div>
+    <div class="routing__row"><span class="routing__label">FROM</span><span class="routing__value">Byron Mutimusakwa</span></div>
+    <div class="routing__row"><span class="routing__label">RE</span><span class="routing__value">Community Ops, Brand Growth, Product Marketing &amp; People Experience</span></div>
+    <div class="routing__row"><span class="routing__label">DATE</span><span class="routing__value" id="today-date">—</span></div>
+  </section>
+
+  <!-- THESIS -->
+  <section class="thesis reveal">
+    <p class="thesis__text">
+      I turn strangers into communities, and community trust into growth. Over the past three years I've helped take a technical YouTube channel from <strong>4,000 to 20,000 subscribers</strong>, moderated a 400-member Discord from the ground up, and kept a support queue at <strong>99% SLA</strong> — by building the documentation, guidelines, and content systems that let people, and teams, trust what happens next.
+    </p>
+    <div class="thesis__actions">
+      <a class="btn btn--primary" href="mailto:byron.mutimusakwa@bsu.edu?subject=Let%27s%20talk">Open a thread →</a>
+      <a class="btn btn--ghost" href="assets/ByronMutimusakwaResume.docx" download>Résumé ↓</a>
+    </div>
+  </section>
+
+  <!-- GROWTH TICKER (signature element) -->
+  <section class="ticker reveal" aria-label="Subscriber growth chart">
+    <div class="ticker__label">
+      <span class="ticker__tag">EXHIBIT A</span>
+      <span class="ticker__title">The Growth Ticker</span>
+    </div>
+    <div class="ticker__chart-wrap">
+      <svg viewBox="0 0 720 300" class="ticker__svg" id="growth-chart" role="img" aria-labelledby="chart-desc">
+        <desc id="chart-desc">Line chart showing Navigating Security subscriber growth climbing from 4,000 in October 2022 to 20,000 by August 2025.</desc>
+
+        <!-- gridlines -->
+        <g class="grid">
+          <line x1="60" y1="40"  x2="700" y2="40"  />
+          <line x1="60" y1="100" x2="700" y2="100" />
+          <line x1="60" y1="160" x2="700" y2="160" />
+          <line x1="60" y1="220" x2="700" y2="220" />
+          <line x1="60" y1="260" x2="700" y2="260" />
+        </g>
+
+        <!-- y labels -->
+        <text x="50" y="44"  class="axis-label" text-anchor="end">20k</text>
+        <text x="50" y="104" class="axis-label" text-anchor="end">15k</text>
+        <text x="50" y="164" class="axis-label" text-anchor="end">10k</text>
+        <text x="50" y="224" class="axis-label" text-anchor="end">5k</text>
+        <text x="50" y="264" class="axis-label" text-anchor="end">0</text>
+
+        <!-- x labels -->
+        <text x="60"  y="284" class="axis-label">Oct '22</text>
+        <text x="260" y="284" class="axis-label">Aug '23</text>
+        <text x="460" y="284" class="axis-label">Jun '24</text>
+        <text x="670" y="284" class="axis-label" text-anchor="end">Aug '25</text>
+
+        <!-- growth line: 4k -> 20k, roughly linear with slight acceleration -->
+        <path id="growth-path" class="growth-line"
+          d="M60,236 C 200,224 260,204 340,168 C 420,132 520,84 620,52 L 700,40" />
+
+        <!-- start/end markers -->
+        <circle cx="60" cy="236" r="4.5" class="pt pt--start" />
+        <circle cx="700" cy="40" r="5.5" class="pt pt--end" />
+
+        <!-- annotation: hand-drawn circle + arrow -->
+        <g class="annotation">
+          <ellipse cx="700" cy="40" rx="26" ry="18" transform="rotate(-8 700 40)" />
+          <path d="M 640 76 Q 660 66 678 52" class="annotation__arrow" marker-end="url(#arrowhead)" />
+          <text x="560" y="90" class="annotation__text">+400% in ~3 yrs</text>
+        </g>
+
+        <defs>
+          <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 z" class="annotation__arrowhead" />
+          </marker>
+        </defs>
+      </svg>
+    </div>
+    <p class="ticker__caption">Navigating Security — YouTube &amp; Discord community, Oct 2022 – Aug 2025. Sourced from channel &amp; community records.</p>
+  </section>
+
+  <!-- CASE LOG -->
+  <section class="log" id="log">
+    <h2 class="section-title reveal"><span class="section-title__tag">CASE LOG</span>Open &amp; closed tickets</h2>
+
+    <div class="ticket reveal" data-status="live">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#001</span>
+        <span class="ticket__status ticket__status--live">LIVE</span>
+        <span class="ticket__re">4,000 → 20,000 — growing Navigating Security</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>Grew a technical security YouTube channel 5x by shifting to a consistent weekly edit cadence in DaVinci Resolve, and pairing every release with community discussion in Discord rather than treating video and community as separate jobs.</p>
+        <p>The unlock wasn't one viral video — it was the system behind it: a repeatable production workflow, moderation guidelines that kept discussion productive as the server scaled past 400 members, and an onboarding flow that turned new subscribers into active community members instead of silent viewers.</p>
+      </div>
+    </div>
+
+    <div class="ticket reveal" data-status="progress">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#002</span>
+        <span class="ticket__status ticket__status--progress">IN PROGRESS</span>
+        <span class="ticket__re">Community Ops Playbook</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>Turning two years of Discord moderation guidelines and onboarding flow design for a 400-member technical community into a genericized, public template — the kind of artifact I wish existed when I was building it from scratch.</p>
+      </div>
+    </div>
+
+    <div class="ticket reveal" data-status="progress">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#003</span>
+        <span class="ticket__status ticket__status--progress">IN PROGRESS</span>
+        <span class="ticket__re">Newsletter Teardown — Navigating Security</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>A breakdown of the editorial process behind the Navigating Security newsletter: how stories get chosen, how they're structured for a technical-but-mixed-skill audience, and how engagement actually gets measured issue to issue.</p>
+      </div>
+    </div>
+
+    <div class="ticket reveal" data-status="live">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#004</span>
+        <span class="ticket__status ticket__status--live">LIVE</span>
+        <span class="ticket__re">Support-to-Systems — Zimbabwe Women's Microfinance Bank</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>Resolved 20–50 tickets a week at 99% SLA compliance — not by working faster, but by documenting root causes the first time I found them, inside a compliance-driven organization that treated documentation with the same rigor as a regulated quality system.</p>
+        <p>That habit is the actual case study: support work scales when the fix gets written down as well as it gets applied.</p>
+      </div>
+    </div>
+
+    <div class="ticket reveal" data-status="live">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#005</span>
+        <span class="ticket__status ticket__status--live">LIVE</span>
+        <span class="ticket__re">Generative AI for Community &amp; Business</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>Co-authored research on generative AI applications for business and community contexts, and on gamification strategies for motivation in collaborative technical learning environments — now adapting the findings into a practical, non-academic read on where AI actually helps community managers day to day.</p>
+      </div>
+    </div>
+
+    <div class="ticket reveal" data-status="backlog">
+      <button class="ticket__head" aria-expanded="false">
+        <span class="ticket__num">TICKET&nbsp;#006</span>
+        <span class="ticket__status ticket__status--backlog">BACKLOG</span>
+        <span class="ticket__re">Product Launch Plan (sample)</span>
+        <span class="ticket__chev">＋</span>
+      </button>
+      <div class="ticket__body">
+        <p>A full positioning, messaging, and launch plan for a small real product — next up on the list, to show product-marketing thinking end to end rather than just describing it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONBOARDING CHECKLIST (skills) -->
+  <section class="checklist" id="skills">
+    <h2 class="section-title reveal"><span class="section-title__tag">ONBOARDING</span>Skills issued</h2>
+    <ul class="checklist__grid">
+      <li class="checklist__item reveal">Customer troubleshooting &amp; root cause analysis</li>
+      <li class="checklist__item reveal">Technical support &amp; documentation systems</li>
+      <li class="checklist__item reveal">Cross-functional communication &amp; collaboration</li>
+      <li class="checklist__item reveal">Community moderation &amp; guideline-setting</li>
+      <li class="checklist__item reveal">Content planning &amp; video production (DaVinci Resolve)</li>
+      <li class="checklist__item reveal">Newsletter writing &amp; editorial process</li>
+      <li class="checklist__item reveal">AI-assisted workflows</li>
+      <li class="checklist__item reveal">Data analysis &amp; interpretation</li>
+      <li class="checklist__item reveal">Public speaking coaching &amp; feedback delivery</li>
+    </ul>
+  </section>
+
+  <!-- SERVICE RECORD (experience) -->
+  <section class="record" id="record">
+    <h2 class="section-title reveal"><span class="section-title__tag">SERVICE RECORD</span>Employment ledger</h2>
+
+    <article class="record__entry reveal">
+      <div class="record__head">
+        <h3 class="record__role">Graduate Research Assistant &amp; Teaching Assistant</h3>
+        <span class="record__dates">Aug 2025 – Jul 2026</span>
+      </div>
+      <p class="record__org">Ball State University · Indiana, USA</p>
+      <ul class="record__list">
+        <li>Co-authored research on generative AI for business/community applications and gamification strategies for collaborative technical learning.</li>
+        <li>Led alumni outreach initiatives connecting program alumni with current students through social learning programs.</li>
+        <li>Drove employer engagement outreach to expand opportunities for graduate program talent.</li>
+        <li>Taught public speaking fundamentals to classes of 60 students, providing structured, constructive feedback.</li>
+      </ul>
+    </article>
+
+    <article class="record__entry reveal">
+      <div class="record__head">
+        <h3 class="record__role">Community Manager &amp; Discord Moderator</h3>
+        <span class="record__dates">Aug 2024 – Aug 2025</span>
+      </div>
+      <p class="record__org">Cybersecurity Learning Community · Remote</p>
+      <ul class="record__list">
+        <li>Authored and distributed the Navigating Security newsletter — security news, analysis, and curated community content.</li>
+        <li>Managed and moderated an active Discord community of ~400 members across varying technical skill levels.</li>
+        <li>Helped grow the Navigating Security YouTube channel from 2,000 to 20,000 subscribers.</li>
+        <li>Established moderation guidelines, onboarding flow, and engagement practices for a safe, active learning environment.</li>
+      </ul>
+    </article>
+
+    <article class="record__entry reveal">
+      <div class="record__head">
+        <h3 class="record__role">Community Manager</h3>
+        <span class="record__dates">Oct 2022 – Aug 2025</span>
+      </div>
+      <p class="record__org">Navigating Security · Remote, USA</p>
+      <ul class="record__list">
+        <li>Edited and produced weekly video content in DaVinci Resolve, sustaining a consistent publishing cadence for nearly two years.</li>
+        <li>Contributed to channel growth from 4,000 to 20,000 subscribers through polished, audience-focused editing.</li>
+        <li>Partnered closely with the channel owner on content planning and production workflow.</li>
+      </ul>
+    </article>
+
+    <article class="record__entry reveal">
+      <div class="record__head">
+        <h3 class="record__role">Technical Support Engineer</h3>
+        <span class="record__dates">Aug 2022 – Aug 2023</span>
+      </div>
+      <p class="record__org">Zimbabwe Women's Microfinance Bank · Zimbabwe</p>
+      <ul class="record__list">
+        <li>Provided technical support and troubleshooting for internal systems and end users.</li>
+        <li>Diagnosed and resolved technical issues, documenting solutions to improve future response efficiency.</li>
+        <li>Maintained 99% SLA compliance while resolving 20–50 support tickets per week.</li>
+        <li>Collaborated with engineers, compliance, and operations teams to standardize technical documentation.</li>
+      </ul>
+    </article>
+
+    <p class="record__education reveal">
+      <strong>Education —</strong> M.S. Information &amp; Communication Sciences, Ball State University (2025–2026) · B.S. Informatics, National University of Science &amp; Technology, Zimbabwe (2020–2024)
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="contact reveal" id="contact">
+    <h2 class="section-title"><span class="section-title__tag">NEW THREAD</span>Start a conversation</h2>
+    <p class="contact__text">Open a role in community ops, growth, product marketing, or people experience? I'd like to hear about it.</p>
+    <div class="contact__actions">
+      <a class="btn btn--primary" href="mailto:byron.mutimusakwa@bsu.edu?subject=Let%27s%20talk">Email me →</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/in/byron-mutimusakwa/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn--ghost" href="assets/ByronMutimusakwaResume.docx" download>Résumé ↓</a>
+    </div>
+    <p class="contact__meta">Filed from Indiana, USA · Last updated <span id="today-date-2">—</span></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
