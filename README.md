@@ -2,7 +2,7 @@
 
 Personal portfolio site covering Community Operations, Brand Growth, Product Marketing, and People Experience work.
 
-Live at: https://byronmutimusakwa.github.io/byron-portfolio/ (once GitHub Pages is enabled)
+Live at: https://byronmutimusakwa.github.io/byrons-community-ops-portfolio/
 
 ## Structure
 
