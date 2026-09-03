@@ -282,13 +282,6 @@ h1,h2,h3{ margin: 0; font-family: var(--mono); }
   object-fit: cover;
   display: block;
 }
-.hero__photo-caption{
-  margin: 10px 4px 0;
-  font-size: 12px;
-  font-family: var(--mono);
-  color: var(--ink-faint);
-  text-align: center;
-}
 
 /* --- Stat strip (credibility signals) --- */
 .stat-strip{
