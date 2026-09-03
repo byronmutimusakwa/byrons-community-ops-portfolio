@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Byron Mutimusakwa — Community Ops, Brand Growth &amp; People Experience</title>
 <meta name="description" content="Byron Mutimusakwa — Community Operations, Brand Growth, Product Marketing &amp; People Experience. Case log, service record, and open threads.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%23201D2E%22/><text x=%2250%22 y=%2266%22 font-family=%22monospace%22 font-size=%2258%22 fill=%22%23EDEAE1%22 text-anchor=%22middle%22>B</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%23121016%22/><text x=%2250%22 y=%2266%22 font-family=%22monospace%22 font-size=%2258%22 fill=%22%23A78BFA%22 text-anchor=%22middle%22>B</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,16 +27,59 @@
 
 <main class="sheet">
 
-  <!-- MASTHEAD -->
-  <header class="masthead reveal">
-    <div class="masthead__top">
-      <h1 class="masthead__name">BYRON&nbsp;MUTIMUSAKWA</h1>
-      <span class="status-dot" title="Open to opportunities">
-        <span class="status-dot__pulse"></span>
-        OPEN&nbsp;TO&nbsp;WORK
-      </span>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <nav class="hero__nav reveal">
+      <span class="hero__navbrand">B/M</span>
+      <div class="hero__navlinks">
+        <a href="#log">Case Studies</a>
+        <a href="#record">About</a>
+      </div>
+      <a class="btn btn--primary btn--sm" href="mailto:byronmutimusakwa@yahoo.com?subject=Let%27s%20talk">Get in touch</a>
+    </nav>
+
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <span class="status-dot" title="Open to opportunities">
+          <span class="status-dot__pulse"></span>
+          OPEN&nbsp;TO&nbsp;WORK
+        </span>
+        <h1 class="hero__name">Byron<br>Mutimusakwa</h1>
+        <p class="hero__subtitle">Community Ops · Brand Growth · Product Marketing · People Experience</p>
+        <p class="hero__thesis">I turn strangers into communities, and community trust into growth — using the documentation, guidelines, and content systems that let people, and teams, trust what happens next.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="mailto:byronmutimusakwa@yahoo.com?subject=Let%27s%20talk">Open a thread →</a>
+          <a class="btn btn--ghost" href="assets/ByronMutimusakwaResume.docx" download>Résumé ↓</a>
+        </div>
+      </div>
+
+      <div class="hero__photo reveal">
+        <div class="hero__photo-panel">
+          <span class="hero__photo-placeholder" aria-hidden="true">BM</span>
+          <!-- Swap the span above for: <img src="assets/byron-photo.jpg" alt="Byron Mutimusakwa" class="hero__photo-img"> -->
+        </div>
+        <p class="hero__photo-caption">Based in Indiana, USA — open to remote &amp; relocation</p>
+      </div>
     </div>
-    <p class="masthead__subtitle">Community Ops · Brand Growth · Product Marketing · People Experience</p>
+
+    <ul class="stat-strip reveal">
+      <li class="stat-strip__item">
+        <span class="stat-strip__num">20,000</span>
+        <span class="stat-strip__label">YouTube subscribers grown</span>
+      </li>
+      <li class="stat-strip__item">
+        <span class="stat-strip__num">99%</span>
+        <span class="stat-strip__label">Support SLA maintained</span>
+      </li>
+      <li class="stat-strip__item">
+        <span class="stat-strip__num">400</span>
+        <span class="stat-strip__label">Discord members moderated</span>
+      </li>
+      <li class="stat-strip__item">
+        <span class="stat-strip__num">60</span>
+        <span class="stat-strip__label">Students coached in public speaking</span>
+      </li>
+    </ul>
   </header>
 
   <!-- ROUTING SLIP -->
@@ -44,18 +87,7 @@
     <div class="routing__row"><span class="routing__label">TO</span><span class="routing__value">Hiring Teams &amp; Collaborators</span></div>
     <div class="routing__row"><span class="routing__label">FROM</span><span class="routing__value">Byron Mutimusakwa</span></div>
     <div class="routing__row"><span class="routing__label">RE</span><span class="routing__value">Community Ops, Brand Growth, Product Marketing &amp; People Experience</span></div>
-    <div class="routing__row"><span class="routing__label">DATE</span><span class="routing__value" id="today-date">—</span></div>
-  </section>
-
-  <!-- THESIS -->
-  <section class="thesis reveal">
-    <p class="thesis__text">
-      I turn strangers into communities, and community trust into growth. Over the past three years I've helped take a technical YouTube channel from <strong>4,000 to 20,000 subscribers</strong>, moderated a 400-member Discord from the ground up, and kept a support queue at <strong>99% SLA</strong> — by building the documentation, guidelines, and content systems that let people, and teams, trust what happens next.
-    </p>
-    <div class="thesis__actions">
-      <a class="btn btn--primary" href="mailto:byronmutimusakwa@yahoo.com?subject=Let%27s%20talk">Open a thread →</a>
-      <a class="btn btn--ghost" href="assets/ByronMutimusakwaResume.docx" download>Résumé ↓</a>
-    </div>
+    <div class="routing__row"><span class="routing__label">DATE</span><span class="routing__value" id="today-date">—</span><span class="routing__cursor" aria-hidden="true"></span></div>
   </section>
 
   <!-- GROWTH TICKER (signature element) -->
@@ -120,6 +152,7 @@
     <h2 class="section-title reveal"><span class="section-title__tag">CASE LOG</span>Open &amp; closed tickets</h2>
 
     <div class="ticket reveal" data-status="live">
+      <span class="ticket__bignum" aria-hidden="true">01</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#001</span>
         <span class="ticket__status ticket__status--live">LIVE</span>
@@ -133,6 +166,7 @@
     </div>
 
     <div class="ticket reveal" data-status="progress">
+      <span class="ticket__bignum" aria-hidden="true">02</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#002</span>
         <span class="ticket__status ticket__status--progress">IN PROGRESS</span>
@@ -145,6 +179,7 @@
     </div>
 
     <div class="ticket reveal" data-status="progress">
+      <span class="ticket__bignum" aria-hidden="true">03</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#003</span>
         <span class="ticket__status ticket__status--progress">IN PROGRESS</span>
@@ -157,6 +192,7 @@
     </div>
 
     <div class="ticket reveal" data-status="live">
+      <span class="ticket__bignum" aria-hidden="true">04</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#004</span>
         <span class="ticket__status ticket__status--live">LIVE</span>
@@ -170,6 +206,7 @@
     </div>
 
     <div class="ticket reveal" data-status="live">
+      <span class="ticket__bignum" aria-hidden="true">05</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#005</span>
         <span class="ticket__status ticket__status--live">LIVE</span>
@@ -182,6 +219,7 @@
     </div>
 
     <div class="ticket reveal" data-status="backlog">
+      <span class="ticket__bignum" aria-hidden="true">06</span>
       <button class="ticket__head" aria-expanded="false">
         <span class="ticket__num">TICKET&nbsp;#006</span>
         <span class="ticket__status ticket__status--backlog">BACKLOG</span>
