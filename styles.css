@@ -273,6 +273,11 @@ h1,h2,h3{ margin: 0; font-family: var(--mono); }
   justify-content: center;
   overflow: hidden;
 }
+.hero__photo-placeholder{
+  font-family: var(--display);
+  font-size: clamp(64px, 12vw, 96px);
+  color: rgba(18,16,22,0.35);
+}
 .hero__photo-img{
   width: 100%; height: 100%;
   object-fit: cover;
